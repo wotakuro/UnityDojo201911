@@ -1,0 +1,4 @@
+.titleText {
+    font-size: 40px;
+    -unity-text-align: upper-center;
+}
