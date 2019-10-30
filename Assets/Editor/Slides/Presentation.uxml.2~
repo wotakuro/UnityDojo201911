@@ -1,0 +1,16 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+    <ui:VisualElement name="Page1" class="page" style="position: absolute; flex-shrink: 0; flex-grow: 0; align-items: center; justify-content: space-around; height: 540px; width: 960px;">
+        <Style path="Assets/Editor/Slides/Presentation.uss" />
+        <Style path="Assets/Editor/Slides/Presentation.uss" />
+        <ui:Label text="UIElements+UI BuilderでEditor拡張を作ろう" style="position: absolute; top: 146px; left: 45px; -unity-font-style: normal; margin-bottom: 0; font-size: 40px; -unity-text-align: middle-center; display: flex; overflow: visible; height: 53px; width: 854px;" />
+        <ui:Label text="ユニティ・テクノロジーズ・ジャパン合同会社" style="position: absolute; left: 47px; -unity-font-style: normal; font-size: 30px; top: 360px; overflow: visible; align-items: center; justify-content: center; -unity-text-align: middle-left; height: 68px; width: 670px;" />
+        <ui:Label text="黒河 優介" focusable="false" style="position: absolute; left: 51px; -unity-font-style: normal; font-size: 30px; top: 430px; overflow: visible; -unity-text-align: middle-left; height: 68px; width: 670px;" />
+    </ui:VisualElement>
+    <ui:VisualElement name="Generic" focusable="false" class="page" style="position: absolute; left: 0; bottom: 0; flex-shrink: 0; flex-grow: 0; top: 0; right: 0;">
+        <Style path="Assets/Editor/Slides/Presentation.uss" />
+        <Style path="Assets/Editor/Slides/Presentation.uss" />
+        <ui:Button text="前へ" name="PrevPage" style="position: absolute; bottom: 7px; right: 56px; height: 19px; width: 48px;" />
+        <ui:Button text="次へ" name="NextPage" style="position: absolute; bottom: 7px; right: 3px; height: 19px; width: 48px;" />
+        <ui:Button text="Reload" name="Reload" style="position: absolute; right: 6px; width: 48px; top: 9px; height: 19px;" />
+    </ui:VisualElement>
+</ui:UXML>

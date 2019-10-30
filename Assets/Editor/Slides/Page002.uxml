@@ -1,0 +1,13 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+    <ui:VisualElement name="Page2" class="page" style="position: absolute; flex-shrink: 0; flex-grow: 0; align-items: center; justify-content: space-around; height: 540px; width: 960px;">
+        <Style path="Assets/Editor/Slides/Presentation.uss" />
+        <Style path="Assets/Editor/Slides/Presentation.uss" />
+        <ui:ListView focusable="True" style="height: 275px; width: 290px;">
+            <ui:Label text="このスライドはEditor拡張です" style="position: relative; left: 0; -unity-font-style: normal; font-size: 30px; top: 0; overflow: visible; align-items: center; justify-content: center; -unity-text-align: middle-left; height: 68px; width: 670px; -unity-font: url('/Assets/Editor/Slides/Roboto-Regular.ttf');" />
+        </ui:ListView>
+        <ui:Label text="お分かりいただけただろうか？" style="position: absolute; top: 43px; left: 45px; -unity-font-style: normal; margin-bottom: 0; font-size: 40px; -unity-text-align: middle-center; display: flex; overflow: visible; height: 53px; width: 854px; -unity-font: url('/Assets/Editor/Slides/Roboto-Regular.ttf');" />
+        <ui:Label focusable="false" style="position: absolute; left: 79px; -unity-font-style: normal; font-size: 30px; top: 410px; overflow: visible; -unity-text-align: middle-left; height: 68px; width: 670px; -unity-font: url('/Assets/Editor/Slides/Roboto-Regular.ttf');">
+            <ui:VisualElement name="Man" style="background-image: url('/Assets/Editor/Slides/pose_doyagao_man.png'); height: 281px; position: absolute; width: 225px; top: -258px; left: -42px;" />
+        </ui:Label>
+    </ui:VisualElement>
+</ui:UXML>
