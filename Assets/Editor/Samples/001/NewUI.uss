@@ -1,0 +1,9 @@
+.myclass {
+    font-size: 30px;
+}
+.mybutton {
+    font-size: 20px;
+    position: absolute;
+    bottom: 3px;
+    right: 3px;
+}

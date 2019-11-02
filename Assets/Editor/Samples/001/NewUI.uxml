@@ -1,0 +1,11 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" 
+         xmlns:uie="UnityEditor.UIElements">
+    <ui:Label text="テキスト表示" class="myclass" 
+              style="color: rgb(255, 0, 0);">
+        <Style src="NewUI.uss" />
+    </ui:Label>
+    <ui:Button name="SubmitBtn" 
+               text="決定" class="mybutton">
+        <Style src="NewUI.uss" />
+    </ui:Button>
+</ui:UXML>

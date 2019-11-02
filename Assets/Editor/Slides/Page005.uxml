@@ -1,0 +1,10 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+    <ui:VisualElement name="Page2" class="page" style="position: absolute; flex-shrink: 0; flex-grow: 0; align-items: center; justify-content: space-around; height: 540px; width: 960px;">
+        <Style src="Presentation.uss" />
+        <ui:Label style="position: absolute; top: 43px; left: 45px; -unity-font-style: normal; margin-bottom: 0; font-size: 40px; -unity-text-align: middle-left; display: flex; overflow: visible; height: 498px; width: 854px; -unity-font: url('/Assets/Editor/Slides/Roboto-Regular.ttf');">
+            <ui:VisualElement style="background-image: url('/Assets/Editor/Slides/Images/seikou_syukufuku_woman_solo.png'); height: 359px; position: absolute; top: 100px; width: 359px; left: 504px;" />
+            <ui:Label text="UIElementsが出来ました！" style="position: absolute; top: 152px; left: 7px;" />
+            <ui:Label text="2019.1でExperimentalが外れました " style="position: absolute; top: 224px; left: 15px; font-size: 25px;" />
+        </ui:Label>
+    </ui:VisualElement>
+</ui:UXML>
