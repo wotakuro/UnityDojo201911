@@ -1,10 +1,9 @@
-﻿using UnityEngine;
-using UnityEditor;
+﻿using UnityEditor;
 using UnityEngine.UIElements;
 
 public class NewUICs : EditorWindow
 {
-    [MenuItem("Samples/001")]
+    [MenuItem("Tools/NewUI")]
     public static void Create()
     {
         EditorWindow.GetWindow<NewUICs>();
