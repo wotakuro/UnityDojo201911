@@ -1,0 +1,12 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" 
+         xmlns:uie="UnityEditor.UIElements">
+    <ui:VisualElement name="Screen">
+        <Style src="InteractSample.uss" />
+        <ui:TextField name="TextInput" />
+        <ui:Button text="追加する" name="AddBtn" />
+        <ui:ScrollView name="ScrollList"
+                       view-data-key="ListItem">
+            <ui:Button text="削除する" name="DelBtn" />
+        </ui:ScrollView>
+    </ui:VisualElement>
+</ui:UXML>

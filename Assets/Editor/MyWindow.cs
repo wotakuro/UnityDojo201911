@@ -5,7 +5,7 @@ using UnityEditor;
 
 class MyWindow : EditorWindow
 {
-    [MenuItem("Tools/Sample")]
+    [MenuItem("Samples/_OldStyle")]
     public static void Create()
     {
         EditorWindow.GetWindow<MyWindow>();

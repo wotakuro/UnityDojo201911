@@ -2,8 +2,9 @@
 using UnityEngine.UIElements;
 
 public class NewUICs : EditorWindow
+
 {
-    [MenuItem("Tools/NewUI")]
+    [MenuItem("Samples/001_NewUI")]
     public static void Create()
     {
         EditorWindow.GetWindow<NewUICs>();

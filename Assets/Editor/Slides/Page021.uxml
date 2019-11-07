@@ -1,0 +1,11 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+    <ui:VisualElement name="Page2" class="page" style="position: absolute; flex-shrink: 0; flex-grow: 0; align-items: center; justify-content: space-around; height: 540px; width: 960px;">
+        <Style src="Presentation.uss" />
+        <ui:Label text="UIElementsのツリー構造について" style="position: absolute; top: 43px; left: 45px; -unity-font-style: normal; margin-bottom: 0; font-size: 40px; -unity-text-align: middle-center; display: flex; overflow: visible; height: 53px; width: 854px; -unity-font: url('/Assets/Editor/Slides/Roboto-Regular.ttf');" />
+        <ui:Label focusable="false" style="position: absolute; left: 128px; -unity-font-style: normal; font-size: 30px; top: 155px; overflow: visible; -unity-text-align: middle-left; height: 322px; width: 527px; -unity-font: url('/Assets/Editor/Slides/Roboto-Regular.ttf');">
+            <ui:VisualElement name="Man" style="background-image: url('/Assets/Editor/Slides/Images/english_book_girl.png'); height: 151px; position: absolute; width: 139px; top: -1px; left: -134px;" />
+            <ui:Label text="UIElementsのツリー構造を利用してC#と紐づけます " style="margin-bottom: 10px; font-size: 30px;" />
+            <ui:Label text="まずは、UIElementsのツリー構造について理解しましょう " style="margin-bottom: 10px; font-size: 30px;" />
+        </ui:Label>
+    </ui:VisualElement>
+</ui:UXML>

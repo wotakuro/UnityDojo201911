@@ -4,7 +4,7 @@
         <ui:Label text="従来のEditor拡張の問題点" style="position: absolute; top: 43px; left: 45px; -unity-font-style: normal; margin-bottom: 0; font-size: 40px; -unity-text-align: middle-left; display: flex; overflow: visible; height: 53px; width: 854px; -unity-font: url('/Assets/Editor/Slides/Roboto-Regular.ttf');" />
         <ui:Label focusable="false" style="position: absolute; left: 72px; -unity-font-style: normal; font-size: 30px; top: 132px; overflow: visible; -unity-text-align: middle-left; height: 364px; width: 849px; -unity-font: url('/Assets/Editor/Slides/Roboto-Regular.ttf');">
             <ui:Label text="- 全体の構成、表示スタイル、ロジックが分離されていない" style="margin-bottom: 10px; width: 800px;" />
-            <ui:Label text="- - 全てC#に集約されてしまっている" style="margin-bottom: 10px;" />
+            <ui:Label text="- 全てC#に集約されてしまっている" style="margin-bottom: 10px;" />
             <ui:Label text="- パフォーマンス上も問題があった" videoFile="Assets/Editor/Video" style="margin-bottom: 10px;" />
             <ui:Label text="  (描画毎にレイアウト処理が必要なため)" videoFile="Assets/Editor/Video" style="margin-bottom: 10px;" />
         </ui:Label>
