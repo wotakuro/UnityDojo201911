@@ -1,0 +1,9 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+    <ui:VisualElement name="Page2" class="page" style="position: absolute; flex-shrink: 0; flex-grow: 0; align-items: center; justify-content: space-around; height: 540px; width: 960px;">
+        <Style src="Presentation.uss" />
+        <ui:Label text="ボタンと処理の紐づけ(3)" style="position: absolute; top: 28px; left: 45px; -unity-font-style: normal; margin-bottom: 0; font-size: 40px; -unity-text-align: middle-left; display: flex; overflow: visible; height: 53px; width: 854px; -unity-font: url('/Assets/Editor/Slides/Roboto-Regular.ttf');" />
+        <ui:Label focusable="false" style="position: absolute; left: 26px; -unity-font-style: normal; font-size: 30px; top: 102px; overflow: visible; -unity-text-align: middle-left; height: 406px; width: 681px; -unity-font: url('/Assets/Editor/Slides/Roboto-Regular.ttf');">
+            <ui:VisualElement name="Man" style="background-image: url('/Assets/Editor/Slides/Images/BtnQueryStep3.png'); height: 412px; position: absolute; width: 667px; top: 5px; left: 18px;" />
+        </ui:Label>
+    </ui:VisualElement>
+</ui:UXML>
