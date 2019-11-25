@@ -7,7 +7,7 @@
             <ui:Label text="- uxml/ussを作成するためのツール" style="margin-bottom: 10px;" />
             <ui:Label text="- PackageManagerよりpreiewで提供中" videoFile="Assets/Editor/Video" style="margin-bottom: 10px;" />
         </ui:Label>
-        <ui:Label text="複数選択できなかったり色々と文句はありますが… 
+        <ui:Label text="複数選択できなかったり色々と文句はありますが… &#xA;
 XML手書きじゃないので大分改善します" videoFile="Assets/Editor/Video" style="margin-bottom: 10px; position: absolute; bottom: 93px; right: 231px; width: 368px; height: 40px; font-size: 15px;" />
     </ui:VisualElement>
 </ui:UXML>
