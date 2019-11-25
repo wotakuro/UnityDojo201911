@@ -1,0 +1,7 @@
+.fullrect {
+    position: absolute;
+    right: -2px;
+    left: -1px;
+    top: -1px;
+    bottom: 1px;
+}

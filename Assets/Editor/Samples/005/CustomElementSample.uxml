@@ -1,5 +1,5 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
-    <UTJ.MyVideoElement videoPath="Assets/Editor/Samples/005/Niceboat.mp4" style="position: absolute; right: -2px; left: -1px; top: -1px; bottom: 1px;">
+    <UTJ.MyAssetPreview assetPath="Assets/Editor/Samples/005/MyPrefab.prefab" class="fullrect">
         <Style src="CustomElementSample.uss" />
-    </UTJ.MyVideoElement>
+    </UTJ.MyAssetPreview>
 </ui:UXML>

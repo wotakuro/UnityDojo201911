@@ -15,25 +15,25 @@ namespace UTJ
     <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
       <ui:Label text="Hello World! From UXML">
       </ui:Label>
-      <UTJ.MyVideoElement videoPath="Assets/test.mp4">
+      <UTJ.MyAssetPreview assetPath="Assets/test.mp4">
       </UTJ.KurokawaElement>
     </ui:UXML>
      */
     // ↑自前で UXMLの要素を追加出来る様子…
-    public class MyVideoElement : VisualElement
+    public class MyAssetPreview : VisualElement
     {
-        // 独自のデータVideoPath
-        public string videoPath;
+        // 独自のデータAssetPath
+        string assetPath;
 
         // UXMLからオブジェクトを生成するためのファクトリー
-        public new class UxmlFactory : UxmlFactory<MyVideoElement, UxmlTraits> { }
+        public new class UxmlFactory : UxmlFactory<MyAssetPreview, UxmlTraits> { }
 
         // UXMLから要素を抜き出してきてオブジェクトに適用する部分
         public new class UxmlTraits : VisualElement.UxmlTraits
         {
             //ここで独自のAttributeを指定します
-            UxmlStringAttributeDescription m_videoPath = 
-                new UxmlStringAttributeDescription { name = "videoPath" };
+            UxmlStringAttributeDescription assetPathAttr = 
+                new UxmlStringAttributeDescription { name = "assetPath" };
 
             // 子要素を持つかどうか
             public override IEnumerable<UxmlChildElementDescription> uxmlChildElementsDescription
@@ -45,21 +45,21 @@ namespace UTJ
             {
                 base.Init(ve, bag, cc);
                 // 要素からデータを取ってきます
-                string vPath = m_videoPath.GetValueFromBag(bag, cc);
-                MyVideoElement videoElement = (MyVideoElement)ve;
-                videoElement.videoPath = vPath;
+                string assetPath = assetPathAttr.GetValueFromBag(bag, cc);
+                MyAssetPreview assetPreview = (MyAssetPreview)ve;
+                assetPreview.assetPath = assetPath;
 
-                // ビデオ部分実装
-                VideoClipImporter videoClip = AssetImporter.GetAtPath(vPath) as VideoClipImporter;
-                if (videoClip != null) {
-                    videoClip.PlayPreview();
-                    Background background = videoElement.style.backgroundImage.value;
-                    background.texture = videoClip.GetPreviewTexture() as Texture2D;
-                    videoElement.style.backgroundImage = background;
+                // Preview部分実装
+                UnityEngine.Object asset = 
+                    AssetDatabase.LoadAssetAtPath<UnityEngine.Object>(assetPath);
+                if (asset != null) {
+                    Background background = assetPreview.style.backgroundImage.value;
+                    background.texture = AssetPreview.GetAssetPreview(asset);
+                    assetPreview.style.backgroundImage = background;
                 }
                 else
                 {
-                    Debug.LogError("VideoClipが見つかりません\n" + vPath);
+                    Debug.LogError("Assetがみつかりません\n" + assetPath);
                 }
             }
         }
