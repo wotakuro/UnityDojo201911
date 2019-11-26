@@ -1,7 +1,8 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
     <ui:VisualElement name="Page2" class="page" style="position: absolute; flex-shrink: 0; flex-grow: 0; align-items: center; justify-content: space-around; height: 540px; width: 960px;">
         <Style src="Presentation.uss" />
-        <ui:Label text="実行画面" style="position: absolute; top: 43px; left: 45px; -unity-font-style: normal; margin-bottom: 0; font-size: 40px; -unity-text-align: middle-left; display: flex; overflow: visible; height: 53px; width: 854px; -unity-font: url('/Assets/Editor/Slides/Roboto-Regular.ttf');" />
-        <ui:Button style="position: absolute; height: 373px; top: 113px; width: 507px; left: 45px; background-image: url('/Assets/Editor/Slides/Images/NewUI_editor_run.png');" />
+        <ui:Label class="presentation-text" text="実行画面" style="position: absolute; top: 43px; left: 45px; -unity-font-style: normal; margin-bottom: 0; font-size: 40px; -unity-text-align: middle-left; display: flex; overflow: visible; height: 53px; width: 854px; -unity-font: url('/Assets/Editor/Slides/Roboto-Regular.ttf');" />
+        <ui:Button class="exec-sample01"
+          style="position: absolute; height: 373px; top: 113px; width: 507px; left: 45px; background-image: url('/Assets/Editor/Slides/Images/NewUI_editor_run.png');" />
     </ui:VisualElement>
 </ui:UXML>

@@ -1,12 +1,12 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
     <ui:VisualElement name="Page2" class="page" style="position: absolute; flex-shrink: 0; flex-grow: 0; align-items: center; justify-content: space-around; height: 540px; width: 960px;">
         <Style src="Presentation.uss" />
-        <ui:Label text="えっ、このUXMLとUSS書くんですか… " style="position: absolute; top: 28px; left: 45px; -unity-font-style: normal; margin-bottom: 0; font-size: 40px; -unity-text-align: middle-left; display: flex; overflow: visible; height: 53px; width: 854px; -unity-font: url('/Assets/Editor/Slides/Roboto-Regular.ttf');" />
-        <ui:Label focusable="false" style="position: absolute; left: 26px; -unity-font-style: normal; font-size: 30px; top: 102px; overflow: visible; -unity-text-align: middle-left; height: 406px; width: 681px; -unity-font: url('/Assets/Editor/Slides/Roboto-Regular.ttf');">
+        <ui:Label class="presentation-text" text="えっ、このUXMLとUSS書くんですか… " style="position: absolute; top: 28px; left: 45px; -unity-font-style: normal; margin-bottom: 0; font-size: 40px; -unity-text-align: middle-left; display: flex; overflow: visible; height: 53px; width: 854px; -unity-font: url('/Assets/Editor/Slides/Roboto-Regular.ttf');" />
+        <ui:Label class="presentation-text" focusable="false" style="position: absolute; left: 26px; -unity-font-style: normal; font-size: 30px; top: 102px; overflow: visible; -unity-text-align: middle-left; height: 406px; width: 681px; -unity-font: url('/Assets/Editor/Slides/Roboto-Regular.ttf');">
             <ui:VisualElement name="Man" style="background-image: url('/Assets/Editor/Slides/Images/NewUI_Uxml.png'); height: 204px; position: absolute; width: 405px; top: 20px; left: 17px;" />
             <ui:VisualElement name="Man" style="background-image: url('/Assets/Editor/Slides/Images/NewUI_Uss.PNG'); height: 162px; position: absolute; width: 239px; top: 23px; left: 427px;" />
             <ui:VisualElement name="Man" style="background-image: url('/Assets/Editor/Slides/Images/angry_fukureru_girl.png'); height: 162px; position: absolute; width: 139px; top: 233px; left: 21px;">
-                <ui:Label text="時代は令和なのに、&#xA;こんなのを手打ちだなんてあんまりです…。" style="position: absolute; top: 10px; left: 141px; height: 153px; width: 655px;" />
+                <ui:Label class="presentation-text" text="時代は令和なのに、&#xA;こんなのを手打ちだなんてあんまりです…。" style="position: absolute; top: 10px; left: 141px; height: 153px; width: 655px;" />
             </ui:VisualElement>
         </ui:Label>
     </ui:VisualElement>

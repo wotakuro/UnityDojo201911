@@ -1,0 +1,7 @@
+.presentation-title {
+    -unity-font: url('/Assets/Editor/Slides/mplus-1c-regular.ttf');
+}
+
+.presentation-text {
+    -unity-font: url('/Assets/Editor/Slides/mplus-1c-regular.ttf');
+}

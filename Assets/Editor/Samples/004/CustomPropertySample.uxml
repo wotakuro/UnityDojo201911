@@ -1,6 +1,5 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
-    <ui:Label text="CustomPropValue" 
-              class="mycustom">
+    <ui:Label text="CustomPropValue" class="mycustom" style="font-size: 40px; white-space: normal;">
         <Style src="CustomPropertySample.uss" />
     </ui:Label>
 </ui:UXML>

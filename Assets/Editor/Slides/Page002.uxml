@@ -1,11 +1,11 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
     <ui:VisualElement name="Page2" class="page" style="position: absolute; flex-shrink: 0; flex-grow: 0; align-items: center; justify-content: space-around; height: 540px; width: 960px;">
         <Style src="Presentation.uss" />
-        <ui:Label text="本日のアジェンダ" style="position: absolute; top: 43px; left: 45px; -unity-font-style: normal; margin-bottom: 0; font-size: 40px; -unity-text-align: middle-left; display: flex; overflow: visible; height: 53px; width: 854px; -unity-font: url('/Assets/Editor/Slides/Roboto-Regular.ttf');" />
-        <ui:Label focusable="false" style="position: absolute; left: 110px; -unity-font-style: normal; font-size: 30px; top: 156px; overflow: visible; -unity-text-align: middle-left; height: 322px; width: 639px; -unity-font: url('/Assets/Editor/Slides/Roboto-Regular.ttf');">
-            <ui:Label text="- UIElements/UIBuilderの紹介 " style="margin-bottom: 10px;" />
-            <ui:Label text="- UIElementsのツリー構造について " style="margin-bottom: 10px;" />
-            <ui:Label text="- UIElementsの応用編 " videoFile="Assets/Editor/Video" style="margin-bottom: 10px;" />
+        <ui:Label class="presentation-text" text="本日のアジェンダ" style="position: absolute; top: 43px; left: 45px; -unity-font-style: normal; margin-bottom: 0; font-size: 40px; -unity-text-align: middle-left; display: flex; overflow: visible; height: 53px; width: 854px; -unity-font: url('/Assets/Editor/Slides/Roboto-Regular.ttf');" />
+        <ui:Label class="presentation-text" focusable="false" style="position: absolute; left: 110px; -unity-font-style: normal; font-size: 30px; top: 156px; overflow: visible; -unity-text-align: middle-left; height: 322px; width: 639px; -unity-font: url('/Assets/Editor/Slides/Roboto-Regular.ttf');">
+            <ui:Label class="presentation-text" text="- UIElements/UIBuilderの紹介 " style="margin-bottom: 10px;" />
+            <ui:Label class="presentation-text" text="- UIElementsのツリー構造について " style="margin-bottom: 10px;" />
+            <ui:Label class="presentation-text" text="- UIElementsの応用編 " videoFile="Assets/Editor/Video" style="margin-bottom: 10px;" />
         </ui:Label>
     </ui:VisualElement>
 </ui:UXML>

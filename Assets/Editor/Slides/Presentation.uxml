@@ -5,6 +5,6 @@
         <ui:Button text="前へ" name="PrevPage" style="position: absolute; bottom: 7px; right: 98px; height: 19px; width: 48px;" />
         <ui:Button text="次へ" name="NextPage" style="position: absolute; bottom: 7px; right: 3px; height: 19px; width: 48px;" />
         <ui:Button text="Reload" name="Reload" style="position: absolute; right: 6px; width: 48px; top: 9px; height: 19px;" />
-        <ui:Label text="Label" name="PageNumber" style="position: absolute; right: 56px; width: 34px; bottom: 7px; height: 16px; -unity-text-align: middle-center;" />
+        <ui:Label class="presentation-text" text="Label" name="PageNumber" style="position: absolute; right: 56px; width: 34px; bottom: 7px; height: 16px; -unity-text-align: middle-center;" />
     </ui:VisualElement>
 </ui:UXML>

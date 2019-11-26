@@ -1,0 +1,14 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+    <ui:VisualElement name="Page2" class="page" style="position: absolute; flex-shrink: 0; flex-grow: 0; align-items: center; justify-content: space-around; height: 540px; width: 960px;">
+        <Style src="Presentation.uss" />
+        <ui:Label class="presentation-text" text="その他情報" style="position: absolute; top: 43px; left: 45px; -unity-font-style: normal; margin-bottom: 0; font-size: 40px; -unity-text-align: middle-left; display: flex; overflow: visible; height: 53px; width: 854px; -unity-font: url('/Assets/Editor/Slides/Roboto-Regular.ttf');" />
+        <ui:Label class="presentation-text" focusable="false" style="position: absolute; left: 110px; -unity-font-style: normal; font-size: 30px; top: 156px; overflow: visible; -unity-text-align: middle-left; height: 322px; width: 789px; -unity-font: url('/Assets/Editor/Slides/Roboto-Regular.ttf');">
+            <ui:Label class="presentation-text" text="- 2019.3ベータ、現在UIElemelemtsではIME入力不可" style="margin-bottom: 10px;" />
+            <ui:Label class="presentation-text" text="(2020.1では修正済み、折を見てバックポートリクエストします)" videoFile="Assets/Editor/Video" style="margin-bottom: 10px; font-size: 20px; margin-left: 20px;" />
+            <ui:Label class="presentation-text" text="-2019.3リリース前後でUIElementsがRuntime上で動くためのPackageがpreviewとして出る予定" style="margin-bottom: 10px; white-space: normal;" />
+            <ui:Label class="presentation-text" text="今はAnimationなどの機能がほとんどなし" videoFile="Assets/Editor/Video" style="margin-bottom: 10px; font-size: 20px; margin-left: 20px;" />
+            <ui:Label class="presentation-text" text="今の所、2020.3頃完成予定" videoFile="Assets/Editor/Video" style="margin-bottom: 10px; font-size: 20px; margin-left: 20px;" />
+            <ui:Label class="presentation-text" text="-XML内での改行方法は 「＆＃xA;」" style="margin-bottom: 10px; white-space: normal;" />
+        </ui:Label>
+    </ui:VisualElement>
+</ui:UXML>

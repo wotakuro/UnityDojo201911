@@ -105,6 +105,8 @@ namespace UTJ
             return assets;
         }
 
+
+
         private void ChangePageNumber()
         {
 
@@ -114,6 +116,7 @@ namespace UTJ
             }
 
             currentElement = pageAssets[currentPage ].CloneTree();
+            SetExecute(currentElement);
 
             ScalePage(this.currentWindowRect, currentElement);
             root.Insert(0, currentElement);
@@ -184,6 +187,34 @@ namespace UTJ
                     element.transform.position = new Vector3(offset.x, offset.y, 0.0f);
                     element.transform.scale = new Vector3(scaleRate, scaleRate, 1);
                 });
+        }
+
+        private void SetExecute(VisualElement visualElement)
+        {
+            this.root.SendToBack();
+            visualElement.Query<Button>(null, "exec-sample01").ForEach((btn) =>
+            {
+                btn.focusable = true;
+                btn.clickable.clicked += () => {
+                    NewUICs.Create();
+                };
+            });
+            visualElement.Query<Button>(null, "exec-sample02").ForEach((btn) =>
+            {
+                btn.clickable.clicked += () => { InteractSample.Create(); };
+            });
+            visualElement.Query<Button>(null, "exec-sample03").ForEach((btn) =>
+            {
+                btn.clickable.clicked += () => { IMGUIContainerSample.Create(); };
+            });
+            visualElement.Query<Button>(null, "exec-sample04").ForEach((btn) =>
+            {
+                btn.clickable.clicked += () => { CustomPropertySample.Create(); };
+            });
+            visualElement.Query<Button>(null, "exec-sample05").ForEach((btn) =>
+            {
+                btn.clickable.clicked += () => { CustomElementSample.Create(); };
+            });
         }
     }
 }

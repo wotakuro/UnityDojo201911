@@ -1,11 +1,11 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
     <ui:VisualElement name="Page2" class="page" style="position: absolute; flex-shrink: 0; flex-grow: 0; align-items: center; justify-content: space-around; height: 540px; width: 960px;">
         <Style src="Presentation.uss" />
-        <ui:Label text="C#でTree構造を操作して表示を変えます" 
+        <ui:Label class="presentation-text" text="C#でTree構造を操作して表示を変えます" 
                   style="position: absolute; top: 43px; left: 45px; -unity-font-style: normal; margin-bottom: 0; font-size: 40px; -unity-text-align: middle-left; display: flex; overflow: visible; height: 53px; width: 854px;" />
-        <ui:Label style="position: absolute; left: 31px; -unity-font-style: normal; font-size: 30px; top: 111px; overflow: visible; -unity-text-align: middle-left; height: 403px; width: 894px; -unity-font: url('/Assets/Editor/Slides/Roboto-Regular.ttf');">
+        <ui:Label class="presentation-text" style="position: absolute; left: 31px; -unity-font-style: normal; font-size: 30px; top: 111px; overflow: visible; -unity-text-align: middle-left; height: 403px; width: 894px; -unity-font: url('/Assets/Editor/Slides/Roboto-Regular.ttf');">
             <ui:VisualElement name="Man" style="background-image: url('/Assets/Editor/Slides/Images/TreeOnly.PNG'); height: 367px; position: absolute; width: 509px; top: 2px; left: 7px;" />
-            <ui:Label text="Treeからノードを取得してきて、そのノードを操作することで表示を変えます。 例えば「text」を書き換える事で表示するテキストを変えたり… Buttonの場合、Clickイベントを追加して、ボタン推したときのコールバックを追加したり…" style="white-space: normal; position: absolute; top: 5px; left: 520px; height: 326px; width: 355px; -unity-text-align: upper-left; font-size: 20px;" />
+            <ui:Label class="presentation-text" text="Treeからノードを取得してきて、そのノードを操作することで表示を変えます。 例えば「text」を書き換える事で表示するテキストを変えたり… Buttonの場合、Clickイベントを追加して、ボタン推したときのコールバックを追加したり…" style="white-space: normal; position: absolute; top: 5px; left: 520px; height: 326px; width: 355px; -unity-text-align: upper-left; font-size: 20px;" />
         </ui:Label>
     </ui:VisualElement>
 </ui:UXML>

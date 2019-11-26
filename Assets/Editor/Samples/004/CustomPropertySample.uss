@@ -1,5 +1,3 @@
-
 .mycustom {
-	--data-origin:100;
+    --data-origin: 100;
 }
-
