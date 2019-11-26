@@ -194,6 +194,18 @@ namespace UTJ
 
         private void SetExecute(VisualElement visualElement)
         {
+            visualElement.Query<Button>(null, "exec-uibuilder").ForEach((btn) =>
+            {
+                btn.clickable.clicked += () => {
+                    CallUIBuilder();
+                };
+            });
+            visualElement.Query<Button>(null, "exec-imgui").ForEach((btn) =>
+            {
+                btn.clickable.clicked += () => {
+                    MyWindow.Create();
+                };
+            });
             visualElement.Query<Button>(null, "exec-sample01").ForEach((btn) =>
             {
                 btn.clickable.clicked += () => {
@@ -216,6 +228,29 @@ namespace UTJ
             {
                 btn.clickable.clicked += () => { CustomElementSample.Create(); };
             });
+        }
+
+        private void CallUIBuilder (){
+            string cls = "Unity.UI.Builder.Builder";
+            string method = "ShowWindow";
+            CallStaticMethod(cls, method);
+        }
+        private void CallStaticMethod(string cls , string method)
+        {
+            System.Type t = null;
+            var domain = System.AppDomain.CurrentDomain;
+            foreach( var asm in domain.GetAssemblies())
+            {
+                t = asm.GetType(cls);
+                if( t != null) { break; }
+            }
+            if( t == null) {
+                Debug.LogError("not found " +cls);
+                return;
+            }
+            System.Reflection.BindingFlags flag = System.Reflection.BindingFlags.Static | System.Reflection.BindingFlags.Public;
+            var methodObj = t.GetMethod(method, flag);
+            methodObj.Invoke(null,null);
         }
     }
 }
