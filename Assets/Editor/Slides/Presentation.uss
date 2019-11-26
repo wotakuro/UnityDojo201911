@@ -5,3 +5,29 @@
 .presentation-text {
     -unity-font: url('/Assets/Editor/Slides/mplus-1c-regular.ttf');
 }
+
+.exec-imgui {
+    cursor: url('/Assets/Editor/Slides/Images/internet_screenshot_computer.png');
+}
+.exec-uidebugger {
+    cursor: url('/Assets/Editor/Slides/Images/internet_screenshot_computer.png');
+}
+.exec-uibuilder {
+    cursor: url('/Assets/Editor/Slides/Images/internet_screenshot_computer.png');
+}
+.exec-sample01 {
+    cursor: url('/Assets/Editor/Slides/Images/internet_screenshot_computer.png');
+}
+.exec-sample02 {
+    cursor: url('/Assets/Editor/Slides/Images/internet_screenshot_computer.png');
+}
+.exec-sample03 {
+    cursor: url('/Assets/Editor/Slides/Images/internet_screenshot_computer.png');
+}
+.exec-sample04 {
+    cursor: url('/Assets/Editor/Slides/Images/internet_screenshot_computer.png');
+}
+.exec-sample05 {
+    cursor: url('/Assets/Editor/Slides/Images/internet_screenshot_computer.png');
+}
+
