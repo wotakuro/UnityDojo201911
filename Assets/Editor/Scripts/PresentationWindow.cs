@@ -111,7 +111,7 @@ namespace UTJ
         private void ChangePageNumber()
         {
 
-            if (currentElement != null)
+            if (currentElement != null && currentElement.parent != null)
             {
                 currentElement.parent.Remove(currentElement);
             }
@@ -194,10 +194,16 @@ namespace UTJ
 
         private void SetExecute(VisualElement visualElement)
         {
+            visualElement.Query<Button>(null, "exec-uidebugger").ForEach((btn) =>
+            {
+                btn.clickable.clicked += () => {
+                    CallStaticMethod("UnityEditor.UIElements.Debugger.UIElementsDebugger", "Open");
+                };
+            });
             visualElement.Query<Button>(null, "exec-uibuilder").ForEach((btn) =>
             {
                 btn.clickable.clicked += () => {
-                    CallUIBuilder();
+                    CallStaticMethod("Unity.UI.Builder.Builder", "ShowWindow");
                 };
             });
             visualElement.Query<Button>(null, "exec-imgui").ForEach((btn) =>
@@ -230,11 +236,6 @@ namespace UTJ
             });
         }
 
-        private void CallUIBuilder (){
-            string cls = "Unity.UI.Builder.Builder";
-            string method = "ShowWindow";
-            CallStaticMethod(cls, method);
-        }
         private void CallStaticMethod(string cls , string method)
         {
             System.Type t = null;
@@ -248,7 +249,8 @@ namespace UTJ
                 Debug.LogError("not found " +cls);
                 return;
             }
-            System.Reflection.BindingFlags flag = System.Reflection.BindingFlags.Static | System.Reflection.BindingFlags.Public;
+            System.Reflection.BindingFlags flag = System.Reflection.BindingFlags.Static | 
+                System.Reflection.BindingFlags.Public| System.Reflection.BindingFlags.NonPublic;
             var methodObj = t.GetMethod(method, flag);
             methodObj.Invoke(null,null);
         }

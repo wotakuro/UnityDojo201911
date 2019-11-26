@@ -9,7 +9,7 @@
             <ui:Label text="(現時点での出来はお世辞にもよくないですが、ないよりはマシ" videoFile="Assets/Editor/Video" class="presentation-text" style="margin-bottom: 10px; font-size: 10px; margin-left: 20px;" />
             <ui:Label text="- IMGUIとUIElementsはIMGUIContainerで共存できる" videoFile="Assets/Editor/Video" class="presentation-text" style="margin-bottom: 10px;" />
             <ui:Label text="- 独自のElementを作ることも出来る" videoFile="Assets/Editor/Video" class="presentation-text" style="margin-bottom: 10px;" />
-            <ui:Label text="- UIElement Debugger便利" videoFile="Assets/Editor/Video" class="presentation-text" style="margin-bottom: 10px;" />
+            <ui:Label text="- UIElements Debugger便利" videoFile="Assets/Editor/Video" class="presentation-text" style="margin-bottom: 10px;" />
         </ui:Label>
     </ui:VisualElement>
 </ui:UXML>
