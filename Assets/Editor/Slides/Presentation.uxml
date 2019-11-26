@@ -1,10 +1,14 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
-    <ui:VisualElement name="Generic" focusable="false" style="position: absolute; left: 0; bottom: 0; flex-shrink: 0; flex-grow: 0; top: 0; right: 0;">
-        <Style path="Assets/Editor/Slides/Presentation.uss" />
-        <Style path="Assets/Editor/Slides/Presentation.uss" />
-        <ui:Button text="前へ" name="PrevPage" style="position: absolute; bottom: 7px; right: 98px; height: 19px; width: 48px;" />
-        <ui:Button text="次へ" name="NextPage" style="position: absolute; bottom: 7px; right: 3px; height: 19px; width: 48px;" />
-        <ui:Button text="Reload" name="Reload" style="position: absolute; right: 6px; width: 48px; top: 9px; height: 19px;" />
-        <ui:Label class="presentation-text" text="Label" name="PageNumber" style="position: absolute; right: 56px; width: 34px; bottom: 7px; height: 16px; -unity-text-align: middle-center;" />
-    </ui:VisualElement>
+    <ui:Button text="前へ" name="PrevPage" style="position: absolute; bottom: 7px; right: 98px; height: 19px; width: 48px;">
+        <Style src="Presentation.uss" />
+    </ui:Button>
+    <ui:Button text="次へ" name="NextPage" style="position: absolute; bottom: 7px; right: 3px; height: 19px; width: 48px;">
+        <Style src="Presentation.uss" />
+    </ui:Button>
+    <ui:Button text="Reload" name="Reload" style="position: absolute; right: 6px; width: 48px; top: 9px; height: 19px;">
+        <Style src="Presentation.uss" />
+    </ui:Button>
+    <ui:Label text="Label" name="PageNumber" class="presentation-text" style="position: absolute; right: 56px; width: 34px; bottom: 7px; height: 16px; -unity-text-align: middle-center;">
+        <Style src="Presentation.uss" />
+    </ui:Label>
 </ui:UXML>

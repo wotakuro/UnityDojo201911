@@ -37,41 +37,41 @@ namespace UTJ
             var asset = AssetDatabase.LoadAssetAtPath<VisualTreeAsset>(path);
             asset.CloneTree(this.rootVisualElement);
             //
-            root = rootVisualElement.Q<VisualElement>("Generic");
 
             // register Reload Button
-            root.Query<Button>("Reload").ForEach((button) =>
+            rootVisualElement.Query<Button>("Reload").ForEach((button) =>
             {
                 button.clickable.clicked += Reload;
             });
             // nextPage
-            root.Query<Button>("NextPage").ForEach((button) =>
+            rootVisualElement.Query<Button>("NextPage").ForEach((button) =>
             {
                 button.clickable.clicked += () =>
                 {
                     this.NextPage();
                 };
             });
-            // nextPage
-            root.Query<Button>("PrevPage").ForEach((button) =>
+            // previewPage
+            rootVisualElement.Query<Button>("PrevPage").ForEach((button) =>
             {
                 button.clickable.clicked += () =>
                 {
                     this.PrevPage();
                 };
             });
-            root.focusable = true;
-            root.RegisterCallback<KeyDownEvent>((evt) =>
+
+            this.rootVisualElement.focusable = true;
+            this.rootVisualElement.RegisterCallback<KeyDownEvent>((evt) =>
             {
-                if( evt.keyCode == KeyCode.RightArrow)
+                if (evt.keyCode == KeyCode.RightArrow)
                 {
                     this.NextPage();
-                }else if( evt.keyCode == KeyCode.LeftArrow)
+                }
+                else if (evt.keyCode == KeyCode.LeftArrow)
                 {
                     this.PrevPage();
                 }
             });
-            this.rootVisualElement.Add(root);
             // load first page
             this.pageAssets = GetSlideAssets();
             ChangePageNumber();
@@ -123,18 +123,18 @@ namespace UTJ
             this.rootVisualElement.Insert(0, currentElement);
 
 
-            root.Query<Label>("PageNumber").ForEach((label) =>
+            rootVisualElement.Query<Label>("PageNumber").ForEach((label) =>
             {
                 label.text = (this.currentPage + 1).ToString();
             });
             //
-            root.Query<Button>("NextPage").ForEach((button) =>
+            rootVisualElement.Query<Button>("NextPage").ForEach((button) =>
             {
                 button.visible = (this.currentPage < this.pageAssets.Count - 1);
             });
 
             //
-            root.Query<Button>("PrevPage").ForEach((button) =>
+            rootVisualElement.Query<Button>("PrevPage").ForEach((button) =>
             {
                 button.visible = (this.currentPage > 0 );
             });
@@ -156,8 +156,8 @@ namespace UTJ
 
             // page scaling
             ScalePage(rect, this.rootVisualElement);
-            root.style.width = rect.width;
-            root.style.height = rect.height;
+//            root.style.width = rect.width;
+//            root.style.height = rect.height;
             currentWindowRect = rect;
         }
         // page scaling
