@@ -35,14 +35,15 @@ namespace UTJ
             this.rootVisualElement.Clear();
             string path = "Assets/Editor/Slides/Presentation.uxml";
             var asset = AssetDatabase.LoadAssetAtPath<VisualTreeAsset>(path);
-            root = asset.CloneTree();
+            asset.CloneTree(this.rootVisualElement);
+            //
+            root = rootVisualElement.Q<VisualElement>("Generic");
 
             // register Reload Button
             root.Query<Button>("Reload").ForEach((button) =>
             {
                 button.clickable.clicked += Reload;
             });
-            this.rootVisualElement.Add(root);
             // nextPage
             root.Query<Button>("NextPage").ForEach((button) =>
             {
@@ -115,11 +116,13 @@ namespace UTJ
                 currentElement.parent.Remove(currentElement);
             }
 
+            //ページ読み込みを行い設定
             currentElement = pageAssets[currentPage ].CloneTree();
             SetExecute(currentElement);
-
             ScalePage(this.currentWindowRect, currentElement);
-            root.Insert(0, currentElement);
+            this.rootVisualElement.Insert(0, currentElement);
+
+
             root.Query<Label>("PageNumber").ForEach((label) =>
             {
                 label.text = (this.currentPage + 1).ToString();
@@ -191,10 +194,8 @@ namespace UTJ
 
         private void SetExecute(VisualElement visualElement)
         {
-            this.root.SendToBack();
             visualElement.Query<Button>(null, "exec-sample01").ForEach((btn) =>
             {
-                btn.focusable = true;
                 btn.clickable.clicked += () => {
                     NewUICs.Create();
                 };
