@@ -22,14 +22,22 @@ public class InteractSample : EditorWindow
         // 名前のボタンに対して処理をします
         rootVisualElement.Query<Button>("AddBtn").
             ForEach((button) => {
+#if UNITY_2019_3_OR_NEWER
                 button.clicked += this.OnClickAddBtn;
+#else
+                button.clickable.clicked += this.OnClickAddBtn;
+#endif
             });
 
         // 同様に「DelBtn」にも処理を追加します
         rootVisualElement.Query<Button>("DelBtn").
             ForEach((button) =>
             {
+#if UNITY_2019_3_OR_NEWER
                 button.clicked += this.OnClickDelBtn;
+#else
+                button.clickable.clicked += this.OnClickDelBtn;
+#endif
             });
      }
 
